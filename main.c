@@ -41,7 +41,15 @@ int main(void)
 {
     SYSTEM_Initialize();
 
+    uint16_t ADC_12bit = 0;
+    uint8_t sampleNumber = 0; 
+
     while(1)
     {
+        ADC_12bit = ADC0_GetConversionResult();
+        variableWrite_sendFrame(sampleNumber++,ADC_12bit);
+        DELAY_milliseconds(1000);
+
+        //Toggle LED to check everything running. 
     }    
 }

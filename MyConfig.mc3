@@ -29,10 +29,6 @@
          <string>class com.microchip.mcc.redux.hw.module.HardwareModule</string>
       </entry>
       <entry>
-         <string>RTC</string>
-         <string>class com.microchip.mcc.redux.hw.module.HardwareModule</string>
-      </entry>
-      <entry>
          <string>USART1</string>
          <string>class com.microchip.mcc.redux.hw.module.HardwareModule</string>
       </entry>
@@ -53,11 +49,11 @@
          <string>class com.microchip.mcc.redux.script.module.ScriptModule</string>
       </entry>
       <entry>
-         <string>module16</string>
+         <string>module13</string>
          <string>class com.microchip.mcc.redux.script.module.ScriptModule</string>
       </entry>
       <entry>
-         <string>module17</string>
+         <string>module16</string>
          <string>class com.microchip.mcc.redux.script.module.ScriptModule</string>
       </entry>
       <entry>
@@ -95,7 +91,7 @@
    <tokenMap class="java.util.TreeMap">
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Application Builder" name="state"/>
-         <value>{&quot;modules&quot;:{&quot;module17&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/scf-avr8-rtc-v1&quot;,&quot;imports&quot;:{&quot;interrupt_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;interrupt-standard&quot;,&quot;version&quot;:&quot;0.1.0&quot;}},&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;^1.0.0&quot;}},&quot;scf_avr8_rtc_v1&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;scf-avr8-rtc-v1&quot;,&quot;version&quot;:&quot;^1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;RTC&quot;}},&quot;initializer_system&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-system&quot;,&quot;version&quot;:&quot;0.5.3&quot;}}},&quot;payload&quot;:{&quot;main&quot;:{&quot;hardware&quot;:{&quot;clkselClksel&quot;:&quot;1.024 kHz from OSC32K&quot;,&quot;requestedCompareValue&quot;:0.002,&quot;requestedPeriodValue&quot;:5.0}}}},&quot;module58&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/data-streamer-driver&quot;,&quot;imports&quot;:{&quot;uart_basic&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;uart-basic&quot;,&quot;version&quot;:&quot;4.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module9&quot;,&quot;exportId&quot;:&quot;basic_uart&quot;,&quot;label&quot;:&quot;USART1&quot;}}},&quot;payload&quot;:{&quot;main&quot;:{&quot;software&quot;:{&quot;dataStreamerTable&quot;:[{&quot;rowId&quot;:0.0,&quot;uid&quot;:&quot;dynamicRow_1616500817974&quot;,&quot;dynamicallyAdded&quot;:true,&quot;varType&quot;:&quot;uint16_t&quot;,&quot;varName&quot;:&quot;ADC_12bit&quot;},{&quot;rowId&quot;:1.0,&quot;uid&quot;:&quot;defaultRow_0&quot;,&quot;dynamicallyRemoved&quot;:true},{&quot;rowId&quot;:0.0,&quot;uid&quot;:&quot;dynamicRow_1616500851841&quot;,&quot;dynamicallyAdded&quot;:true,&quot;varName&quot;:&quot;sampleNumber&quot;}]}}}},&quot;module57&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/scf-avr8-adc-v1&quot;,&quot;imports&quot;:{&quot;pin_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pin-standard&quot;,&quot;version&quot;:&quot;0.1.0&quot;}},&quot;adc_reference_voltage&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;vref-general-parameters&quot;,&quot;version&quot;:&quot;0.1.0&quot;}},&quot;interrupt_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;interrupt-standard&quot;,&quot;version&quot;:&quot;1.0.1&quot;}},&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;}},&quot;osc_clocks&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;osc-clocks&quot;,&quot;version&quot;:&quot;0.2.0&quot;}},&quot;scf_avr8_adc_v1&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;scf-avr8-adc-v1&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;ADC0&quot;}},&quot;initializer_system&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-system&quot;,&quot;version&quot;:&quot;0.5.3&quot;}}}}},&quot;content&quot;:{&quot;@mchp-mcc/pin-content-processor&quot;:&quot;3.1.5&quot;,&quot;@mchp-mcc/data-streamer-driver&quot;:&quot;1.1.10&quot;,&quot;@mchp-mcc/avr8-pin-manager&quot;:&quot;4.1.3&quot;,&quot;@mchp-mcc/scf-avr8-adc-v1&quot;:&quot;4.0.2&quot;,&quot;@mchp-mcc/scf-avr8-vref-v1&quot;:&quot;4.0.1&quot;,&quot;@mchp-mcc/scf-avr8-interrupt-v1&quot;:&quot;5.0.2&quot;,&quot;@mchp-mcc/scf-avr8-usart-v1&quot;:&quot;7.1.0&quot;,&quot;@mchp-mcc/main-manager&quot;:&quot;3.0.1&quot;,&quot;@mchp-mcc/scf-avr8-clkctrl-v1&quot;:&quot;5.2.3&quot;,&quot;@mchp-mcc/scf-avr8-rtc-v1&quot;:&quot;4.0.2&quot;,&quot;@mchp-mcc/avr8-configuration-bits-v1&quot;:&quot;4.2.4&quot;}}</value>
+         <value>{&quot;modules&quot;:{&quot;module58&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/data-streamer-driver&quot;,&quot;imports&quot;:{&quot;uart_basic&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;uart-basic&quot;,&quot;version&quot;:&quot;4.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;module9&quot;,&quot;exportId&quot;:&quot;basic_uart&quot;,&quot;label&quot;:&quot;USART1&quot;}}},&quot;payload&quot;:{&quot;main&quot;:{&quot;software&quot;:{&quot;dataStreamerTable&quot;:[{&quot;rowId&quot;:0.0,&quot;uid&quot;:&quot;dynamicRow_1616500817974&quot;,&quot;dynamicallyAdded&quot;:true,&quot;varType&quot;:&quot;uint16_t&quot;,&quot;varName&quot;:&quot;ADC_12bit&quot;},{&quot;rowId&quot;:1.0,&quot;uid&quot;:&quot;defaultRow_0&quot;,&quot;dynamicallyRemoved&quot;:true},{&quot;rowId&quot;:0.0,&quot;uid&quot;:&quot;dynamicRow_1616500851841&quot;,&quot;dynamicallyAdded&quot;:true,&quot;varName&quot;:&quot;sampleNumber&quot;}]}}}},&quot;module13&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/delay-blocking-driver&quot;,&quot;imports&quot;:{&quot;config_info&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;config-info&quot;,&quot;version&quot;:&quot;0.2.1&quot;}},&quot;osc_clocks&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;osc-clocks&quot;,&quot;version&quot;:&quot;0.2.0&quot;}}}},&quot;module57&quot;:{&quot;scriptId&quot;:&quot;@mchp-mcc/scf-avr8-adc-v1&quot;,&quot;imports&quot;:{&quot;pin_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;pin-standard&quot;,&quot;version&quot;:&quot;0.1.0&quot;}},&quot;adc_reference_voltage&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;vref-general-parameters&quot;,&quot;version&quot;:&quot;0.1.0&quot;}},&quot;device_meta&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;device-meta&quot;,&quot;version&quot;:&quot;1.0.0&quot;}},&quot;interrupt_standard&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;interrupt-standard&quot;,&quot;version&quot;:&quot;1.0.1&quot;}},&quot;osc_clocks&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;osc-clocks&quot;,&quot;version&quot;:&quot;0.2.0&quot;}},&quot;scf_avr8_adc_v1&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;scf-avr8-adc-v1&quot;,&quot;version&quot;:&quot;1.0.0&quot;},&quot;handle&quot;:{&quot;providerId&quot;:&quot;mccDevice&quot;,&quot;exportId&quot;:&quot;ADC0&quot;}},&quot;initializer_system&quot;:{&quot;interfaceId&quot;:{&quot;name&quot;:&quot;initializer-system&quot;,&quot;version&quot;:&quot;0.5.3&quot;}}}}},&quot;content&quot;:{&quot;@mchp-mcc/pin-content-processor&quot;:&quot;3.1.5&quot;,&quot;@mchp-mcc/delay-blocking-driver&quot;:&quot;3.0.3&quot;,&quot;@mchp-mcc/data-streamer-driver&quot;:&quot;1.1.10&quot;,&quot;@mchp-mcc/avr8-pin-manager&quot;:&quot;4.1.3&quot;,&quot;@mchp-mcc/scf-avr8-adc-v1&quot;:&quot;4.0.2&quot;,&quot;@mchp-mcc/scf-avr8-vref-v1&quot;:&quot;4.0.1&quot;,&quot;@mchp-mcc/scf-avr8-interrupt-v1&quot;:&quot;5.0.2&quot;,&quot;@mchp-mcc/scf-avr8-usart-v1&quot;:&quot;7.1.0&quot;,&quot;@mchp-mcc/main-manager&quot;:&quot;3.0.1&quot;,&quot;@mchp-mcc/scf-avr8-clkctrl-v1&quot;:&quot;5.2.3&quot;,&quot;@mchp-mcc/avr8-configuration-bits-v1&quot;:&quot;4.2.4&quot;}}</value>
       </entry>
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
@@ -128,12 +124,20 @@
          <hash>ce29a4aa431a8f80bee3ee891dc36bfd8e86a596c6e69ea049887908d3a989e5</hash>
       </entry>
       <entry>
+         <file>mcc_generated_files/timer/delay.h</file>
+         <hash>daff5d9bf76a00c67d9bfe3e586f4c243e86b0012e909d4498662e54b856f307</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files/system/clock.h</file>
          <hash>693180e24d90c00271989391012460e9c781c67aa82eba52e23cdc44783ba300</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/system/system.h</file>
          <hash>501581f04bdcf1fdd06284619cda10d406565f6c48f4e4cad513a0e10beda2d6</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files/timer/src/delay.c</file>
+         <hash>8cfc24677df53f954c6d4db05305bed9f10817a7e62f26a4d475da1f2e4fa97a</hash>
       </entry>
       <entry>
          <file>mcc_generated_files/system/interrupt.h</file>
@@ -226,6 +230,10 @@
       <entry>
          <file>mcc_generated_files/adc/adc0.h</file>
          <hash>54b8b8af88843c1f21df3ffc8f0ecbd97cbf13780ba05634fbdc909b1c7d929a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files/docs/delay.dox</file>
+         <hash>a946f24e597b1ec95df223676e9c6a7b8c4ecfe00c56b9da078ac35de675df57</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
