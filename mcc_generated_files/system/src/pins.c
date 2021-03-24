@@ -39,6 +39,8 @@
 
 static void (*PC1_InterruptHandler)(void);
 static void (*PC0_InterruptHandler)(void);
+static void (*PC7_InterruptHandler)(void);
+static void (*PC6_InterruptHandler)(void);
 void PORT_Initialize(void);
 
 void PIN_MANAGER_Initialize()
@@ -47,7 +49,7 @@ void PIN_MANAGER_Initialize()
   /* DIR Registers Initialization */
     PORTA.DIR = 0x0;
     PORTB.DIR = 0x0;
-    PORTC.DIR = 0x1;
+    PORTC.DIR = 0x41;
     PORTD.DIR = 0x0;
     PORTE.DIR = 0x0;
     PORTF.DIR = 0x0;
@@ -152,6 +154,8 @@ void PIN_MANAGER_Initialize()
   // register default ISC callback functions at runtime; use these methods to register a custom function
     PC1_SetInterruptHandler(PC1_DefaultInterruptHandler);
     PC0_SetInterruptHandler(PC0_DefaultInterruptHandler);
+    PC7_SetInterruptHandler(PC7_DefaultInterruptHandler);
+    PC6_SetInterruptHandler(PC6_DefaultInterruptHandler);
 }
 
 void PORT_Initialize(void)
@@ -212,6 +216,32 @@ void PC0_DefaultInterruptHandler(void)
     // add your PC0 interrupt custom code
     // or set custom function using PC0_SetInterruptHandler()
 }
+/**
+  Allows selecting an interrupt handler for PC7 at application runtime
+*/
+void PC7_SetInterruptHandler(void (* interruptHandler)(void)) 
+{
+    PC7_InterruptHandler = interruptHandler;
+}
+
+void PC7_DefaultInterruptHandler(void)
+{
+    // add your PC7 interrupt custom code
+    // or set custom function using PC7_SetInterruptHandler()
+}
+/**
+  Allows selecting an interrupt handler for PC6 at application runtime
+*/
+void PC6_SetInterruptHandler(void (* interruptHandler)(void)) 
+{
+    PC6_InterruptHandler = interruptHandler;
+}
+
+void PC6_DefaultInterruptHandler(void)
+{
+    // add your PC6 interrupt custom code
+    // or set custom function using PC6_SetInterruptHandler()
+}
 ISR(PORTA_PORT_vect)
 {  
     // Call the interrupt handler for the callback registered at runtime
@@ -238,6 +268,14 @@ ISR(PORTC_PORT_vect)
     if(VPORTC.INTFLAGS & PORT_INT0_bm)
     {
        PC0_InterruptHandler();
+    }
+    if(VPORTC.INTFLAGS & PORT_INT7_bm)
+    {
+       PC7_InterruptHandler();
+    }
+    if(VPORTC.INTFLAGS & PORT_INT6_bm)
+    {
+       PC6_InterruptHandler();
     }
 
     /* Clear interrupt flags */

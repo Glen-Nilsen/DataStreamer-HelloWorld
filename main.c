@@ -50,6 +50,6 @@ int main(void)
         variableWrite_sendFrame(sampleNumber++,ADC_12bit);
         DELAY_milliseconds(1000);
 
-        //Toggle LED to check everything running. 
+        DebugGPIO1_LED_Toggle();
     }    
 }
